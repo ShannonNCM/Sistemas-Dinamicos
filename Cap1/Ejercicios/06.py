@@ -1,6 +1,6 @@
-#derivadas de las funciones
 from sympy import *
 
+#derivadas de las funciones
 x=symbols('x')
 #hallar las derivadas
 print(f"Derivadas")
