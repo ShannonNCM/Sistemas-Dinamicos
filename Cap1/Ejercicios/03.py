@@ -1,3 +1,4 @@
+#operacioes con matrices
 import numpy as np
 
 #escribimos las matrices
