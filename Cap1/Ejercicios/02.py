@@ -1,6 +1,7 @@
 #evaluar las operaciones
 from math import *
 
+#uso de python como calculadora
 print(f" {4+5+6}")
 print(f" {3**12}")
 print(f" {sin(0.1*pi)}")
