@@ -17,5 +17,8 @@ print(dsolve(deqn,y(x),ics={y(0):1}))
 #d
 x=Function('x')
 deqn=Eq(x(t).diff(t,t)+5*x(t).diff(t)+6*x(t),0)
-print(dsolve(deqn,x(t),ics={x(0):1, x.diff(t).subs(t,0):0}))
+print(dsolve(deqn,x(t),ics={x(0):1, x(t).diff(t).subs(t,0):0}))
 #e
+x=Function('x')
+deqn=Eq(x(t).diff(t,t)+5*x(t).diff(t)+6*x(t),sin(t))
+pprint(dsolve(deqn,x(t),ics={x(0):1, x(t).diff(t).subs(t,0):0}))
