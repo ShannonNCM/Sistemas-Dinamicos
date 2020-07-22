@@ -3,20 +3,20 @@ import matplotlib.pyplot as plt
 import numpy as np
 from mpl_toolkits import mplot3d
 
-#a
+#a)
 #establecer el dominio
 x=np.linspace(-3,3,100)
 #funcion a graficar
 y=3*x**3+2*x**2-5
 plt.plot(x,y)
 plt.show()
-#b
+#b)
 x=np.linspace(-5,5,100)
 y=np.exp(-x**2)
 plt.plot(x,y)
 plt.show()
 
-#c 
+#c)
 '''x,y=np.mgrid[-6:6:100j,-6:6:100j]
 z=x**2-2*x*y-y**2-1
 plt.contour(x,y,z, levels=[1,3,5,10])
@@ -45,7 +45,7 @@ ax.plot_surface(X,Y,Z,cmap='viridis', edgecolor='none')
 #plt.savefig('fig02.pdf')
 plt.show()
 
-#d
+#d)
 def f2(x,y):
     return 4*x**2*np.exp(y)-2*x**4-np.exp(4*y)
 #contorno 2D
@@ -69,7 +69,7 @@ ax.plot_surface(X,Y,Z,cmap='plasma', edgecolor='none')
 #plt.savefig('fig02.pdf')
 plt.show()
 
-#e
+#e)
 #grafica parametrica
 t=np.linspace(-4,4,100)
 x=t**2-3*t
