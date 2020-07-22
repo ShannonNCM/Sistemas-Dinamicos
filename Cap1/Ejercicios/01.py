@@ -23,7 +23,7 @@ m=int(input("Valor de m: "))
 for a in range(1,m): #recorre los valores de a
     for b in range(1,m): #recorre los valores de b
         if a**2+b**2==(b+n)**2: #debe cumplir con la igualdad
-            print(f"a={a}, b={b}, c={b+n}")
+            print(f"a={a}, b={b}, c={b+n}") #se presentan los valores de a, b ,c 
 
 
 '''d) graficar'''
