@@ -9,5 +9,5 @@ B=Function('B')
 #se plantea el sistema de ecuaciones diferenciales
 eqsd=[Eq(A(t).diff(t)+(A(t)*v/V),m/V),Eq(B(t).diff(t)+(B(t)*v/V),A(t)*v/V)]
 #se resuelve el sistema de edos con las condiciones iniciales
-sol=dsolve(eqsd,[A(t),B(t)])
+sol=dsolve(eqsd,[A(t),B(t)]) #no jala bien con condiciones iniciales
 pprint(f"{ sol}")
