@@ -9,7 +9,7 @@ print(f"Temperatura en C: {C}")
 
 
 '''b) programa que sume numeros primos hasta n'''
-#falta ver esto
+#se ingresa el 
 
 
 '''c) considerar tiples pitagoricos enteros positivos a,b,c tales que a^2 + b^2 = c^2, c=b+n
