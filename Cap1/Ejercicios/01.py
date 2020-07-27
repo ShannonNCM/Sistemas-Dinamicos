@@ -9,7 +9,22 @@ print(f"Temperatura en C: {C}")
 
 
 '''b) programa que sume numeros primos hasta n'''
-#se ingresa el 
+#se ingresa el numero n
+n=int(input("Ingrese el valor de n: "))
+#inicializa la sumatoria en 0
+sum=0
+for num in range(2, n+1):
+    i=2
+    #se evalua si el numero es primo
+    for i in range(2,num):
+        if int(num%i)==0:
+            i=num
+            break;
+    #si el numero es primo entonces se suma
+    if i is not num:
+        sum+=num 
+
+print(f"La suma de los numeros primos hasta {n} es {sum}")
 
 
 '''c) considerar tiples pitagoricos enteros positivos a,b,c tales que a^2 + b^2 = c^2, c=b+n
