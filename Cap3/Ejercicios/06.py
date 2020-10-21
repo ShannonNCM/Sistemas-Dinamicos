@@ -6,6 +6,7 @@ import numpy as np
 from scipy.integrate import odeint
 import pylab as pl
 
+
 #sistema 2D no lineal
 def dx_dt(x,t):
     return [x[1],-x[0]+x[0]**3-(1+x[0])*x[1]]
@@ -40,7 +41,7 @@ plt.show()
 
 
 #sistema 2D no lineal
-def dx_dt(x,t):
+def dx1_dt(x,t):
     return [x[1],-x[0]+x[0]**3-(-1+x[0])*x[1]]
 #trayectorias en tiempo hacia adelante
 ts=np.linspace(0,10,500)
@@ -48,7 +49,7 @@ ic=np.linspace(-3,3,6)
 for r in ic:
     for s in ic:
         x0=[r,s]
-        xs=odeint(dx_dt,x0,ts)
+        xs=odeint(dx1_dt,x0,ts)
         plt.plot(xs[:,0],xs[:,1],"r-")
 #trayectorias en tiempo hacia atras
 ts=np.linspace(0,-10,500)
@@ -56,7 +57,7 @@ ic=np.linspace(-3,3,6)
 for r in ic:
     for s in ic:
         x0=[r,s]
-        xs=odeint(dx_dt,x0,ts)
+        xs=odeint(dx1_dt,x0,ts)
         plt.plot(xs[:,0],xs[:,1],"r-")
 #etiquetas de ejes y estilo de letra
 plt.xlabel('x',fontsize=10)
